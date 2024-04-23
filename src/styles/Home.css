@@ -226,6 +226,11 @@
          
             margin-top: -25px;
         }
+                .contact-methoods img {
+        
+                    width: 30px;
+                    height: 30px;
+                }
 }
 @media (max-width:1460px) {
 
@@ -237,6 +242,5 @@
             width: auto;
             height: 5px;
             background: rgb(255, 219, 14);
-            ;
-        }
+    }
 }
