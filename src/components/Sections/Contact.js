@@ -49,20 +49,22 @@ function Contact() {
   };
   const [sendResponse, setSendResponse] = useState(null);
 
-  const sendEmail = useCallback((formData) => {
-    emailjs
-      .send(
+  const sendEmail = useCallback(async (formData) => {
+    try {
+      emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         formData,
         {
           publicKey: import.meta.env.VITE_PUBLIC_KEY,
         }
-      )
-      .then(
-        (response) => {},
-        (err) => {}
       );
+    } catch (error) {
+      if (err instanceof EmailJSResponseStatus) {
+        console.log("EMAILJS FAILED...", err);
+        return;
+      }
+    }
   }, []);
 
   const handleSubmit = useCallback((e) => {
@@ -125,7 +127,7 @@ function Contact() {
             </Col>
           </Row>
           <Row className="d-flex  justify-content-center">
-            <Col className="mt-5" xs={12} sm={12} md={6} >
+            <Col className="mt-5" xs={12} sm={12} md={6}>
               <div className="container">
                 <form onSubmit={handleSubmit} noValidate>
                   <div className="mb-3">
