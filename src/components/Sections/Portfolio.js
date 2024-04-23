@@ -6,6 +6,7 @@ import chat from "../../assets/chat.png"
 import UM from "../../assets/UM.png"
 import todo from "../../assets/todo.png"
 import netflix from "../../assets/netflix.png"
+import ParticleBackground from "../cards/ParticleBackground";
  
 const portfolioData = [
   { 
@@ -38,17 +39,18 @@ const portfolioData = [
 
 function Portfolio() {
   return (
+    
    <Container>
       <section id="Portfolio">
+      
         <h2 className="text-center mt-5 fs-1 fw-bold mb-5">Portfolio</h2>
         <Row>
-         <Row>
+        
           {portfolioData.map((portfolio, index) => (
             <Col className="mt-5"  key={index} xs={12} sm={12} md={4} >
               <Card isPorfolio para={true} url={portfolio.url} btn={true} image={portfolio.image} info={portfolio.info} />
             </Col>
           ))}
-        </Row>
         </Row>
       </section>
     </Container>

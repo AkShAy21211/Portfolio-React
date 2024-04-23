@@ -11,12 +11,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tsparticles/react": "^3.0.0",
     "bootstrap": "^5.3.3",
+    "file-saver": "^2.0.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
-    "react-social-icons": "^6.16.0"
+    "react-scroll-parallax": "^3.4.5",
+    "react-social-icons": "^6.16.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

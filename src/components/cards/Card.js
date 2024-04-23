@@ -9,7 +9,7 @@ function Card({image,title,para,btn,info,isPorfolio,url}) {
   const navigate = (url)=> window.location = url;
 
   return (
-<div  onMouseOver={toogleHover}  onMouseOut={toogleHover} className={`skill-card  ${hover && isPorfolio ?'ishovered':''}`} style={{backgroundImage: isPorfolio ? `url(${image})` : '',backgroundSize:"fill",        backgroundPosition: "center",backgroundRepeat:"no-repeat",width:`${isPorfolio?"auto":''}`,height:`${isPorfolio?"350px":''}`,filter: `${isPorfolio && hover ? 'none' : 'blur(50%)'}`}}>
+<div   onMouseOver={toogleHover}  onMouseOut={toogleHover} className={`skill-card  ${hover && isPorfolio ?'ishovered':''}`} style={{backgroundImage: isPorfolio ? `url(${image})` : '',backgroundSize:"fill",        backgroundPosition: "center",backgroundRepeat:"no-repeat",width:`${isPorfolio?"auto":''}`,height:`${isPorfolio?"350px":''}`,filter: `${isPorfolio && hover ? 'none' : 'blur(50%)'}`}}>
      {!isPorfolio && (<>
          <img src={image} className='img-responsive' alt="" />
       <h3 className='text-center'>{title}</h3>

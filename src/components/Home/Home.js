@@ -6,17 +6,19 @@ import Portfolio from "../Sections/Portfolio";
 import Experience from "../Sections/Experience";
 import Contact from "../Sections/Contact";
 import Thanks from "../Sections/Thanks";
+import ParicleBackground from "../cards/ParticleBackground";
+
 function Home() {
   return (
-   <>
-    <Intro/>
-    <About/>
-    <Skills/>
-    <Portfolio/>
-    <Experience/>
-    <Contact/>
-    <Thanks/>
-   </>
+    <>
+      <Intro />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Experience />
+      <Contact />
+      <Thanks />
+    </>
   );
 }
 

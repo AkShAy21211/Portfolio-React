@@ -7,7 +7,7 @@ import email from "../../assets/email.png";
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.png";
-
+import github from "../../assets/github2.png"
 function Contact() {
 
   const navigate = (url)=>{
@@ -52,7 +52,10 @@ function Contact() {
         <hr />
         <div><img onClick={()=>navigate(import.meta.env.VITE_REACT_APP_LINKEDIN)}src={linkedin} alt="" />
         <img onClick={()=>navigate(import.meta.env.VITE_REACT_WHATSAPP)} src={whatsapp}  className="img-responsive" alt="" />
-        <img onClick={()=>navigate(import.meta.env.VITE_REACT_INSTA)} src={instagram} className="img-responsive" alt="" /></div>
+        <img onClick={()=>navigate(import.meta.env.VITE_REACT_GIT)} src={github} className="img-responsive" alt="" />
+          <img onClick={()=>navigate(import.meta.env.VITE_REACT_INSTA)} src={instagram} className="img-responsive" alt="" />
+
+        </div>
         <hr />
       </span>
     </>
