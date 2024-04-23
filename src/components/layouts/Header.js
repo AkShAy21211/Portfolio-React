@@ -42,6 +42,16 @@ function Header() {
               >
                 Portfolio
               </Nav.Link>
+              <Nav.Link
+                href="#experience"
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                href="#contact"
+              >
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
