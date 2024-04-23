@@ -124,8 +124,8 @@ function Contact() {
               </span>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center">
-            <Col className="mt-5" xs={5}>
+          <Row className="d-flex  justify-content-center">
+            <Col className="mt-5" xs={12} sm={12} md={6} >
               <div className="container">
                 <form onSubmit={handleSubmit} noValidate>
                   <div className="mb-3">
@@ -180,7 +180,7 @@ function Contact() {
                       <p className="text-danger">{error.message}</p>
                     )}
                   </div>
-                  <button type="submit" className="btn  w-100 contact-btn">
+                  <button type="submit" className="btn   w-100 contact-btn">
                     Submit
                   </button>
                 </form>
