@@ -80,6 +80,14 @@
 
 }
 
+@media (max-width:500px){
+
+    #experience {
+    
+            height: 570px;
+        }
+}
+
 .exp-year{
 
     width: 80px;
