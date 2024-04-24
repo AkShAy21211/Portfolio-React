@@ -70,13 +70,11 @@ function Contact() {
 
       setContactResponse(true)
       setFormData({name:"",email:"",message:""});
-      
+      setContactResponse(null)
 
       }).catch((error)=>{
 
         setContactResponse(false)
-      }).finally(()=>{
-        setContactResponse(null)
       })
       
     } else {
