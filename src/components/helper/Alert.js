@@ -6,7 +6,7 @@ const Alert = ({ error,success }) => {
 
  
     if (error) {
-      toast.error(error);
+      toast.warn(error);
     } else if (success) {
       toast.success(success);
     }
