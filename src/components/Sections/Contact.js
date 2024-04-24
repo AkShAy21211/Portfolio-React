@@ -56,15 +56,15 @@ function Contact() {
     <Alert success="ffewf" />;
     const errors = validate(formData);
     if (Object.keys(errors).length === 0) {
-                setError({ name: "", email: "", message: "" });
+       setError({ name: "", email: "", message: "" });
 
  
       emailjs.send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        "service_odnqwdt",
+        "template_1mthbe5",
         formData,
         {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+          publicKey: "VyyWjAOhqujUYhETu",
         }
       ).then((response)=>{
 
@@ -75,6 +75,8 @@ function Contact() {
       }).catch((error)=>{
 
         setContactResponse(false)
+      }).finally(()=>{
+        setContactResponse(null)
       })
       
     } else {
