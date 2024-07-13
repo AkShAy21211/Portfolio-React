@@ -12,12 +12,12 @@ const portfolioData = [
   { 
     image: volttron, 
     url: import.meta.env.VITE_VOLTTRON,
-    info: "This robust e-commerce platform facilitates seamless online shopping experiences. It leverages Express.js for efficient backend development and MongoDB for scalable data management. (Consider adding details about features like product management, user accounts, or shopping cart functionality)" 
+    info: "This robust e-commerce platform facilitates seamless online shopping experiences. It leverages Express.js for efficient backend development and MongoDB for scalable data management." 
   },
   { 
     image: netflix, 
     url: import.meta.env.VITE_NETFLIX, 
-    info: "Dive into the world of streaming entertainment with this captivating Netflix clone. Built using React for a dynamic user interface and Firebase for streamlined backend services, it delivers a familiar and engaging experience. (You could mention specific functionalities like video playback, search, or user recommendations)"
+    info: "Dive into the world of streaming entertainment with this captivating Netflix clone. Built using React for a dynamic user interface and Firebase for streamlined backend services, it delivers a familiar and engaging experience."
   },
   { 
     image: chat, 
@@ -27,7 +27,7 @@ const portfolioData = [
   { 
     image: UM, 
     url: import.meta.env.VITE_UM,  
-    info: "Empower user management with this comprehensive system. Built with React for a user-friendly interface and MongoDB for flexible data storage, it provides efficient control over user accounts and access privileges. (Specify features like user registration, login, profile management," 
+    info: "Empower user management with this comprehensive system. Built with React for a user-friendly interface and MongoDB for flexible data storage, it provides efficient control over user accounts and access privileges" 
   },
   { 
     image: todo, 

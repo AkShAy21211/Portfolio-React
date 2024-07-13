@@ -24,7 +24,7 @@ function Intro() {
             <div className="intro ">
               I'M <span className="name">Akshay P</span> <br />
               Mern Stack Developer <br />
-              <button className="btn btn-outline-warning mt-3 fs-4">
+              <button  className="btn btn-outline-warning mt-3 fs-4">
                 Contact Me
               </button>
                <button  onClick={downloadPDF} className="btn btn-outline-warning mt-3 fs-4 mx-3">
