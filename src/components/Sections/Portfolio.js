@@ -3,37 +3,32 @@ import { Container, Row, Col } from "react-bootstrap";
 import Card from "../cards/Card";
 import volttron from "../../assets/volttron.png"
 import chat from "../../assets/chat.png"
-import UM from "../../assets/UM.png"
-import todo from "../../assets/todo.png"
-import netflix from "../../assets/netflix.png"
-import ParticleBackground from "../cards/ParticleBackground";
- 
+import Social from "../../assets/comingle.png"
+
+
+
 const portfolioData = [
-  { 
+  { project:"Volttron (E-commerce)" ,
     image: volttron, 
     url: import.meta.env.VITE_VOLTTRON,
+    techonologies:["Nodejs","Express","Ejs","Bootstrap","google-auth","aws","razorpay","passportjs etc..",],
     info: "This robust e-commerce platform facilitates seamless online shopping experiences. It leverages Express.js for efficient backend development and MongoDB for scalable data management." 
   },
   { 
-    image: netflix, 
-    url: import.meta.env.VITE_NETFLIX, 
-    info: "Dive into the world of streaming entertainment with this captivating Netflix clone. Built using React for a dynamic user interface and Firebase for streamlined backend services, it delivers a familiar and engaging experience."
-  },
-  { 
+    project:"Chat application",
     image: chat, 
+    techonologies:["Nodejs","Express","React","Chakra-ui etc..",],
     url: import.meta.env.VITE_CHAT, 
     info: "Connect and converse in real-time with this interactive chat application. Utilizing React for an intuitive interface and Firebase for robust communication infrastructure, it fosters collaboration and connection. " 
   },
-  { 
-    image: UM, 
-    url: import.meta.env.VITE_UM,  
-    info: "Empower user management with this comprehensive system. Built with React for a user-friendly interface and MongoDB for flexible data storage, it provides efficient control over user accounts and access privileges" 
+   { 
+    project:"Comingle (Social Media)",
+    image: Social, 
+    techonologies:["Nodejs","Express","Ejs","Bootstrap","google-auth","Socket-io","Web-Rtc","aws","razorpay","passportjs","redux-toolkit","nginx","CICD","Docker etc.."],
+    url: import.meta.env.VITE_SOCIAL, 
+    info: "Connect and converse in real-time with this interactive chat application. Utilizing React for an intuitive interface and Firebase for robust communication infrastructure, it fosters collaboration and connection. " 
   },
-  { 
-    image: todo, 
-    url: import.meta.env.VITE_TODO,  
-    info: "Stay organized and conquer your daily tasks with this streamlined to-do list app. Developed using React for a responsive interface, it empowers you to manage your workload effectively." 
-  }
+
 ];
 
 
@@ -48,7 +43,7 @@ function Portfolio() {
         
           {portfolioData.map((portfolio, index) => (
             <Col className="mt-5"  key={index} xs={12} sm={12} md={4} >
-              <Card isPorfolio para={true} url={portfolio.url} btn={true} image={portfolio.image} info={portfolio.info} />
+              <Card techonologies={portfolio.techonologies} project={portfolio.project} isPorfolio para={true} url={portfolio.url} btn={true} image={portfolio.image} info={portfolio.info} />
             </Col>
           ))}
         </Row>

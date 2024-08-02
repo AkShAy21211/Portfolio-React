@@ -13,7 +13,7 @@ import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.png";
 import github from "../../assets/github2.png";
 function Contact() {
-  const [contactResponse,setContactResponse] = useState(null);
+  const [contactResponse, setContactResponse] = useState(null);
   const navigate = (url) => {
     window.location = url;
   };
@@ -49,34 +49,30 @@ function Contact() {
     return errors;
   };
 
-  
-
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
     <Alert success="ffewf" />;
     const errors = validate(formData);
     if (Object.keys(errors).length === 0) {
-                setError({ name: "", email: "", message: "" });
+      setError({ name: "", email: "", message: "" });
 
- 
-      emailjs.send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        formData,
-        {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
-      ).then((response)=>{
-
-      setContactResponse(true)
-      setFormData({name:"",email:"",message:""});
-      setContactResponse(null)
-
-      }).catch((error)=>{
-
-        setContactResponse(false)
-      })
-      
+      emailjs
+        .send(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          formData,
+          {
+            publicKey: import.meta.env.VITE_PUBLIC_KEY,
+          }
+        )
+        .then((response) => {
+          setContactResponse(true);
+          setFormData({ name: "", email: "", message: "" });
+          setContactResponse(null);
+        })
+        .catch((error) => {
+          setContactResponse(false);
+        });
     } else {
       setError(errors);
     }
@@ -130,8 +126,8 @@ function Contact() {
             </Col>
           </Row>
           <Row className="d-flex  justify-content-center">
-{contactResponse === true && <Alert success="Message sent" />}
-{contactResponse === false && <Alert error="Message not sent" />}
+            {contactResponse === true && <Alert success="Message sent" />}
+            {contactResponse === false && <Alert error="Message not sent" />}
             <Col className="mt-5" xs={12} sm={12} md={6}>
               <div className="container">
                 <form onSubmit={handleSubmit} noValidate>
