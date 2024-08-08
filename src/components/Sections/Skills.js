@@ -7,7 +7,6 @@ import bootstrap from "../../assets/bootstrap.png";
 import css from "../../assets/css3.png";
 import dns from "../../assets/dns.png";
 import github from "../../assets/github.png"; // Fixed typo
-import dsa from "../../assets/dsa.png";
 import hosting from "../../assets/hosting.png";
 import aws from "../../assets/aws.png";
 import javascript from "../../assets/javascript.png";
@@ -34,7 +33,6 @@ function Skills() {
     { image: figma, title: "Figma" },
     { image: postman, title: "Postman" },
     { image: github, title: "GitHub" },
-    { image: dsa, title: "DSA" },
     { image: docker, title: "Docker" },
     { image: aws, title: "AWS" },
     { image: redux, title: "Redux" },

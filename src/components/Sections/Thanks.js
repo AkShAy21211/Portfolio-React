@@ -7,7 +7,7 @@ function Thanks() {
   const calculateTranslateXRange = () => {
     const screenWidth = window.innerWidth;
     const range = screenWidth / 10; // Adjust this value for desired range
-    return [-range / 5, range / 2];
+    return [-range / 3, range / 2];
   };
 
   return (
