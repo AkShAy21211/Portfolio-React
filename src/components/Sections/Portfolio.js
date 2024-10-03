@@ -4,7 +4,7 @@ import Card from "../cards/Card";
 import volttron from "../../assets/volttron.png"
 import chat from "../../assets/chat.png"
 import Social from "../../assets/comingle.png"
-import Poll from "../../assets/poll.png"
+import Poll from "../../assets/poll.jpeg"
 
 
 const portfolioData = [
