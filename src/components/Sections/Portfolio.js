@@ -4,7 +4,7 @@ import Card from "../cards/Card";
 import volttron from "../../assets/volttron.png"
 import chat from "../../assets/chat.png"
 import Social from "../../assets/comingle.png"
-
+import Poll from "../../assets/poll.png"
 
 
 const portfolioData = [
@@ -28,7 +28,13 @@ const portfolioData = [
     url: import.meta.env.VITE_SOCIAL, 
     info: "Connect and converse in real-time with this interactive chat application. Utilizing React for an intuitive interface and Firebase for robust communication infrastructure, it fosters collaboration and connection. " 
   },
-
+   { 
+    project:"Pollara (Online Polling Platform)",
+    image: Poll, 
+    techonologies:["Nodejs","Express","tailwindcss","google-auth","Socket-io","passportjs","React"],
+    url: import.meta.env.VITE_POLL, 
+    info: "A mini Online Voting Platform" 
+  },
 ];
 
 
